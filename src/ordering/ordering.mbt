@@ -3,7 +3,7 @@ pub enum Ordering {
   Less
   Equal
   Greater
-} derive(Eq,Show)
+} derive(Eq, Show)
 
 ///|
 pub fn to_int(self : Ordering) -> Int {

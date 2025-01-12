@@ -1,2 +1,0 @@
-///|
-typealias Ordering = @ordering.Ordering
