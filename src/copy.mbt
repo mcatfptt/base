@@ -12,6 +12,9 @@ pub impl Copy for Unit with shallow_copy(self) { self }
 pub impl Copy for Bool with shallow_copy(self) { self }
 
 ///|
+pub impl Copy for Float with shallow_copy(self) { self }
+
+///|
 pub impl Copy for Int with shallow_copy(self) { self }
 
 ///|

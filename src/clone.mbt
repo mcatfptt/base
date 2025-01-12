@@ -11,6 +11,9 @@ pub impl Clone for Unit with clone(self) { self }
 pub impl Clone for Bool with clone(self) { self }
 
 ///|
+pub impl Clone for Float with clone(self) { self }
+
+///|
 pub impl Clone for Int with clone(self) { self }
 
 ///|
