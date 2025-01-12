@@ -5,6 +5,9 @@ pub impl Clone for Unit with mutability() { Immutable }
 pub impl Clone for Bool with mutability() { Immutable }
 
 ///|
+pub impl Clone for Float with mutability() { Immutable }
+
+///|
 pub impl Clone for Int with mutability() { Immutable }
 
 ///|
