@@ -24,9 +24,3 @@ fn get(self : BytePointer) -> Byte {
 fn set(self : BytePointer, value : Byte) -> Unit {
   self.memory[self.index.reinterpret_as_int()] = value
 }
-
-///|
-trait Printable {
-  size(Self) -> Unit
-  unsafeprint(Self, BytePointer) -> Unit
-}
