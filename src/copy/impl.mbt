@@ -1,7 +1,10 @@
 ///|
-pub impl Copy for Byte with copy(self) { self }
+pub impl Copy for Char with copy(self) { self }
 
 ///|
+pub impl Copy for Byte with copy(self) { self }
+
+///| modify Bytes is undefined behavior
 pub impl Copy for Bytes with copy(self) { self }
 
 ///|
