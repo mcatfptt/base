@@ -87,6 +87,6 @@ fn derive_rep_impl() -> Unit {
   }
 }
 
-test {
-  derive_rep_impl()
+test "code generation" {
+
 }

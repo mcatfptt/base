@@ -1,14 +1,22 @@
 ///|
-pub impl Ord for Byte with cmp(self, other) { self.compare(other) |> @ordering.of }
+pub impl Ord for Byte with cmp(self, other) {
+  self.compare(other) |> @ordering.of
+}
 
 ///|
-pub impl Ord for Int with cmp(self, other) { self.compare(other) |> @ordering.of }
+pub impl Ord for Int with cmp(self, other) {
+  self.compare(other) |> @ordering.of
+}
 
 ///|
-pub impl Ord for Int64 with cmp(self, other) { self.compare(other) |> @ordering.of }
+pub impl Ord for Int64 with cmp(self, other) {
+  self.compare(other) |> @ordering.of
+}
 
 ///|
-pub impl Ord for UInt with cmp(self, other) { self.compare(other) |> @ordering.of }
+pub impl Ord for UInt with cmp(self, other) {
+  self.compare(other) |> @ordering.of
+}
 
 ///|
 pub impl Ord for UInt64 with cmp(self, other) {
@@ -16,13 +24,19 @@ pub impl Ord for UInt64 with cmp(self, other) {
 }
 
 ///|
-pub impl Ord for Float with cmp(self, other) { self.compare(other) |> @ordering.of }
+pub impl Ord for Float with cmp(self, other) {
+  self.compare(other) |> @ordering.of
+}
 
 ///|
-pub impl Ord for Unit with cmp(self, other) { self.compare(other) |> @ordering.of }
+pub impl Ord for Unit with cmp(self, other) {
+  self.compare(other) |> @ordering.of
+}
 
 ///|
-pub impl Ord for Bool with cmp(self, other) { self.compare(other) |> @ordering.of }
+pub impl Ord for Bool with cmp(self, other) {
+  self.compare(other) |> @ordering.of
+}
 
 ///|
 pub impl Ord for String with cmp(self, other) {

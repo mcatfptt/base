@@ -1,6 +1,4 @@
 ///|
-
-
 pub impl Rep for Char with of(self) { self |> into(CharRep(self)) }
 
 ///|
