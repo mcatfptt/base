@@ -1,31 +1,45 @@
 ///|
-impl Ord for Byte with cmp(self, other) { self.compare(other) |> @ordering.of }
-
-///|
-impl Ord for Int with cmp(self, other) { self.compare(other) |> @ordering.of }
-
-///|
-impl Ord for Int64 with cmp(self, other) { self.compare(other) |> @ordering.of }
-
-///|
-impl Ord for UInt with cmp(self, other) { self.compare(other) |> @ordering.of }
-
-///|
-impl Ord for UInt64 with cmp(self, other) {
+pub impl Ord for Byte with cmp(self, other) {
   self.compare(other) |> @ordering.of
 }
 
 ///|
-impl Ord for Float with cmp(self, other) { self.compare(other) |> @ordering.of }
+pub impl Ord for Int with cmp(self, other) {
+  self.compare(other) |> @ordering.of
+}
 
 ///|
-impl Ord for Unit with cmp(self, other) { self.compare(other) |> @ordering.of }
+pub impl Ord for Int64 with cmp(self, other) {
+  self.compare(other) |> @ordering.of
+}
 
 ///|
-impl Ord for Bool with cmp(self, other) { self.compare(other) |> @ordering.of }
+pub impl Ord for UInt with cmp(self, other) {
+  self.compare(other) |> @ordering.of
+}
 
 ///|
-impl Ord for String with cmp(self, other) {
+pub impl Ord for UInt64 with cmp(self, other) {
+  self.compare(other) |> @ordering.of
+}
+
+///|
+pub impl Ord for Float with cmp(self, other) {
+  self.compare(other) |> @ordering.of
+}
+
+///|
+pub impl Ord for Unit with cmp(self, other) {
+  self.compare(other) |> @ordering.of
+}
+
+///|
+pub impl Ord for Bool with cmp(self, other) {
+  self.compare(other) |> @ordering.of
+}
+
+///|
+pub impl Ord for String with cmp(self, other) {
   self.compare(other) |> @ordering.of
 }
 
@@ -39,7 +53,7 @@ fn min(x : Int, y : Int) -> Int {
 }
 
 ///|
-impl Ord for Bytes with cmp(self, other) {
+pub impl Ord for Bytes with cmp(self, other) {
   let xs = self
   let ys = other
   let len = min(xs.length(), ys.length())
@@ -55,7 +69,7 @@ impl Ord for Bytes with cmp(self, other) {
 }
 
 ///|
-impl[A : Ord] Ord for FixedArray[A] with cmp(self, other) {
+pub impl[A : Ord] Ord for FixedArray[A] with cmp(self, other) {
   let xs = self
   let ys = other
   let len = min(xs.length(), ys.length())

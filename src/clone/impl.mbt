@@ -1,13 +1,19 @@
 ///|
+pub impl Clone for Char with clone(self) { self }
+
+///|
+pub impl Clone for Char with mutability() { Immutable }
+
+///|
 pub impl Clone for Byte with clone(self) { self }
 
-///|
+///| 
 pub impl Clone for Byte with mutability() { Immutable }
 
-///|
+///| modify Bytes is undefined behavior
 pub impl Clone for Bytes with clone(self) { self }
 
-///|
+///| modify Bytes is undefined behavior
 pub impl Clone for Bytes with mutability() { Immutable }
 
 ///|
