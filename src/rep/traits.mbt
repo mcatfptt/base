@@ -27,3 +27,11 @@ pub(open) trait Rep {
   to(Term) -> Self
 }
 
+///|
+pub impl Rep for Term with of(self) { self }
+
+///|
+pub impl Rep for Term with to(self) { self }
+
+///|
+pub impl @tn.TypeName for Term with typename() { "unknown" }
