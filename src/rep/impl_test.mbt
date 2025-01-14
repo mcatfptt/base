@@ -4,9 +4,7 @@ test {
   let val = f.apply(x)
   let v = (Rep::to : (Term) -> Int)(val)
   inspect!(v, content="20")
-
 }
-
 
 test {
   let x = 10 |> Rep::of
@@ -14,7 +12,4 @@ test {
   let val = f.apply(x)
   let v = (Rep::to : (Term) -> FixedArray[Int])(val)
   inspect!(v, content="[10]")
-
 }
-
-

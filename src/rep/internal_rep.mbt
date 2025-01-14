@@ -1,7 +1,10 @@
-/// all xxxRep should not be public  
+///| all xxxRep should not be public  
 ///|
 type! LamRep Arrow[Term, Term]
+
+///|
 type! FixedArrayRep FixedArray[Term]
+
 ///|
 type! IntRep Int
 
