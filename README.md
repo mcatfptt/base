@@ -2,7 +2,6 @@
 
 The purpose of this base package is to explore the abstraction capabilities of moonbit and to design elegant APIs, where performance is not a priority. 
 
-We try to rewrite `Haskell` code to `MoonBit`, like `Functor`, `Applicative`, `Monad`, without `HKT`.
 
 ## Feature
 
