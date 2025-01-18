@@ -34,7 +34,7 @@ pub impl[A : Rep + @tn.TypeName, B : Rep + @tn.TypeName] Rep for Arrow[A, B] wit
 }
 
 ///|
-pub fn apply(self : Term, x : Term) -> Term {
+pub fn Term::apply(self : Term, x : Term) -> Term {
   match self.representation {
     LamRep(f) => f.apply(x)
     _ => mismatch("Arrow[\{x.typename}, Term]", self.typename)
